@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pink"
+        tools:context=".CreateAccountActivity">
+
+        <TextView
+            android:id="@+id/createaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create \nAccount :)"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="90dp"
+            android:textSize="30sp"
+            android:textColor="#000"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/Enteremail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:autofillHints="username"
+            android:ems="13"
+            android:hint="Enter Email Address"
+            android:inputType="textEmailAddress"
+            android:paddingBottom="50dp"
+            android:textColorHint="#8D6E63"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/createusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Create Username"
+            android:inputType="text"
+            android:paddingBottom="50dp"
+            android:textColor="@color/material_dynamic_neutral40"
+            android:textColorHint="#8D6E63"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/Enteremail"
+            tools:layout_editor_absoluteX="30dp"
+            tools:ignore="Autofill,VisualLintTextFieldSize" />
+
+        <EditText
+            android:id="@+id/createpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="20dp"
+            android:hint="Create Password"
+            android:inputType="textPassword"
+            android:paddingBottom="50dp"
+            android:textColorHint="@color/material_dynamic_neutral50"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createusername"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <Button
+            android:id="@+id/signupbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="50dp"
+            android:text="Sign Up"
+            android:textSize="24sp"
+            android:backgroundTint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/createpassword" />
+
+    <Button
+        android:id="@+id/AlreadyHAaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="Already Have An Account?"
+        android:textColor="#0E0E0E"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/signupbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

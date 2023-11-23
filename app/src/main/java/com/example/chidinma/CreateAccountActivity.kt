@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class MainActivity : AppCompatActivity() {
+class CreateAccountActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_create_account)
 
-        var joinNowButton: Button = this.findViewById(R.id.joinNowButton)
+        var button: Button = this.findViewById(R.id.AlreadyHAaccount)
 
-        joinNowButton.setOnClickListener{
+        button.setOnClickListener{
             val intent = Intent(this, LoginActivity::class.java)
 
             this.startActivity(intent)
