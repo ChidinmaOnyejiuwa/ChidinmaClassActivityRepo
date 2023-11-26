@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
             messagetoShow = "please input  your username"
             }else if (nmapassword.isEmpty()){
                 messagetoShow = "please input your password"
-
+            //dont forget to declare and run it again before the 11:59 mark
             }else{
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
@@ -60,7 +60,9 @@ class LoginActivity : AppCompatActivity() {
                     (R.id.identity), " An Email Has Been Sent to",
                     Snackbar.LENGTH_LONG).show()
                   }
-
+                // think i am missing something but don't know yet
+                //Sir anthony incase you see this please my messsages are not showing
+                //i got the ept but i dont know why the messages are not showing on thw screen
                     }
 
    }
