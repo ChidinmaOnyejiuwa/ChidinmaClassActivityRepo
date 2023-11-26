@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@drawable/background"
     tools:context=".LoginActivity">
 
     <TextView
@@ -15,6 +16,7 @@
         android:textColor="#000000"
         android:textSize="40dp"
         android:textStyle="bold"
+        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -24,8 +26,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
-        android:textSize="12dp"
-        android:hint="Enter Your Username Password"
+        android:textSize="20dp"
+        android:hint="Enter Your Username &amp; Password"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,11 +37,12 @@
         android:id="@+id/Username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="120dp"
         android:text="Username"
         android:textColor="#AEA5A5"
         android:textSize="32dp"
         android:inputType="textPersonName"
+        android:paddingBottom="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/Enter"
@@ -49,25 +52,27 @@
         android:id="@+id/Password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="10dp"
         android:hint="Password"
         android:textColorHint="#AEA5A5"
         android:textSize="32dp"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        android:paddingBottom="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Username"/>
 
     <Button
-        android:id="@+id/joinNowButton"
+        android:id="@+id/joinButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="130dp"
         android:backgroundTint="#000000"
         android:gravity="center_horizontal"
         android:text="LOGIN"
         android:textColor="#ffffff"
         android:textSize="30dp"
+        android:paddingHorizontal="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -76,28 +81,29 @@
         android:id="@+id/forgotten"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="240dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:hint="Forgotten Password?"
         android:inputType="textPassword"
-        android:textColor="#000000"
+        android:textColor="#B5AFAF"
         android:textSize="20dp"
+        android:backgroundTint="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username" />
+        app:layout_constraintTop_toBottomOf="@+id/joinButton" />
 
     <Button
-        android:id="@+id/Account"
+        android:id="@+id/CreateAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="284dp"
+        android:layout_marginTop="0dp"
         android:gravity="center_horizontal"
-        android:hint="Create A New Account"
+        android:hint="Or Create A New Account"
         android:inputType="textPassword"
         android:textColor="#000000"
         android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@android:color/transparent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Username" />
+        app:layout_constraintTop_toBottomOf="@+id/forgotten" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
