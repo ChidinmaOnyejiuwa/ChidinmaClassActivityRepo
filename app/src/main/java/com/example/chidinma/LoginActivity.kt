@@ -51,7 +51,7 @@ class LoginActivity : AppCompatActivity() {
             messagetoShow = "please input  your username"
             }else if (nmapassword.isEmpty()){
                 messagetoShow = "please input your password"
-            //dont forget to declare and run it again before the 11:59 mark
+            //don't forget to declare and run it again before the 11:59 mark
             }else{
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
